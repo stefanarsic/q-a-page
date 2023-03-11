@@ -81,10 +81,27 @@ p {
   color: black;
 }
 
+i {
+  font-size: 35px;
+  cursor: pointer;
+  /* position: absolute;
+  top: 10%;
+  left: 5%; */
+  position: sticky;
+  bottom: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 845px) {
   iframe {
     width: 400px;
     height: 240px;
+  }
+
+  i {
+    font-size: 30px;
+    bottom: 5%;
   }
 }
 
@@ -105,6 +122,10 @@ p {
   p {
     font-size: 15px;
     text-align: left;
+  }
+
+  i {
+    font-size: 25px;
   }
 }
 
@@ -130,5 +151,9 @@ p {
   p {
     font-size: 13px;
     text-align: left;
+  }
+
+  i {
+    bottom: 2%;
   }
 }
