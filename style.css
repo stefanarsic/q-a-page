@@ -40,6 +40,7 @@ header h1 {
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
+  color: black;
 }
 
 label::before {
@@ -73,4 +74,61 @@ input[type="radio"] {
 
 iframe {
   margin-top: 25px;
+}
+
+p {
+  text-align: justify;
+  color: black;
+}
+
+@media screen and (max-width: 845px) {
+  iframe {
+    width: 400px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  header h1 {
+    font-size: 37px;
+  }
+
+  iframe {
+    width: 350px;
+    height: 170px;
+  }
+
+  .accordion li label {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .accordion li label {
+    font-size: 18px;
+  }
+
+  .accordion li {
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    width: 200px;
+    height: 100px;
+  }
+
+  p {
+    font-size: 13px;
+    text-align: left;
+  }
 }
